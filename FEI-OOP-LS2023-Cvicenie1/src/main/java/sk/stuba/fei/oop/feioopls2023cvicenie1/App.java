@@ -2,9 +2,20 @@ package sk.stuba.fei.oop.feioopls2023cvicenie1;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello world");
-        int zvysok = 2%3;
-        System.out.println(zvysok);
+        int [] pole = new int[10];
+
+        for (int i = 0; i < pole.length; i++) {
+            pole[i] = i;
+        }
+
+        for (int i = 0; i < pole.length; i++) {
+            vypis(pole[i]);
+            // System.out.println("Cislo v poli je " + pole[i]);
+        }
+    }
+
+    public static void vypis(int a) {
+        System.out.println("Cislo v poli je " + a);
     }
 }
 
