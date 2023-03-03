@@ -6,26 +6,17 @@ import java.util.Scanner;
 
 public class Cvicenie2 {
     public static void main(String[] args) {
-        int x = 5;
-        int[] y = new int[]{1, 2, 3};
+        int[][] pole = new int[10][];
 
-        System.out.println(x);
-        pokusRaw(x);
-        System.out.println(x);
+        for (int i = 0; i < pole.length; i++) {
+            pole[i] = new int[i + 1];
+            for (int j = 0; j < pole[i].length; j++) {
+                pole[i][j] = j;
+            }
+        }
 
-        System.out.println(Arrays.toString(y));
-        pokusArray(y);
-        System.out.println(Arrays.toString(y));
-
-    }
-
-    public static void pokusRaw(int cislo) {
-        cislo = 7;
-        System.out.println(cislo);
-    }
-
-    public static void pokusArray(int[] array) {
-        array[0] = 10;
-        System.out.println(Arrays.toString(array));
+        for (int i = 0; i < pole.length; i++) {
+            System.out.println(Arrays.toString(pole[i]));
+        }
     }
 }
