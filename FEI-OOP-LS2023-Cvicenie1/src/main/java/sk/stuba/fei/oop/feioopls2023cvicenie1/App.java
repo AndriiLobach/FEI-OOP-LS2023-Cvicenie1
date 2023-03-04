@@ -16,6 +16,9 @@ public class App {
 
     public static void vypis(int a) {
         System.out.println("Cislo v poli je " + a);
+        if (a == 0) {
+            System.out.println("cislo je nula");
+        }
     }
 }
 
