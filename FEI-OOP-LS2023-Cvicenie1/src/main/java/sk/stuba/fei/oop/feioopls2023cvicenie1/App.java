@@ -15,7 +15,7 @@ public class App {
     }
 
     public static void vypis(int a) {
-        System.out.println("Cislo v poli je " + a);
+        System.out.println(String.format("Funkcia bola zavolana %d. krat", a+1));
     }
 }
 
